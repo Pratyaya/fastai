@@ -5,7 +5,7 @@ from distutils.core import setup
 setup(
   name = 'fastai',
   packages = ['fastai'], # this must be the same as the name above
-  version = '0.1',
+  version = '0.2',
   author = 'Jeremy Howard, Rachel Thomas, Yannet Interian and many others',
   author_email = 'j@fast.ai',
   description = 'The fast.ai deep learning library, lessons, and tutorials',
