@@ -13,7 +13,6 @@ setup(
   download_url = 'https://github.com/groverpr/fastai/archive/0.1.tar.gz', 
   keywords = ['deeplearning', 'pytorch', 'machinelearning'], # arbitrary keywords
   classifiers = ['Development Status :: 3 - Alpha',
-		'Intended Audience :: Data Scientists',
 		'Topic :: Deep Learning :: Machine Learning',
 			],
 )
