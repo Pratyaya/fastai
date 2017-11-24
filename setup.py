@@ -1,12 +1,6 @@
 
 # coding: utf-8
 
-# In[ ]:
-
-
-
-# coding: utf-8
-
 """
 Setup script for installing fastai
 """
@@ -24,7 +18,11 @@ from distutils.core import setup
 
 setup(
     name = "fastai",
-    version = 0.45 ,
+
+    packages = ['fastai'], # this must be the same as the name above
+
+    version = 0.46 ,
+
     description = "The fast.ai deep learning library, lessons, and tutorials",
     
     author = "Jeremy Howard, Rachel Thomas, Yannet Interian and many others",
@@ -33,7 +31,7 @@ setup(
     
     url = "https://github.com/groverpr/fastai",
     
-    download_url =  'https://github.com/groverpr/fastai/archive/0.45.tar.gz',
+    download_url =  'https://github.com/groverpr/fastai/archive/0.46.tar.gz',
 
     install_requires = 
      ['bcolz>=1.1.2',
