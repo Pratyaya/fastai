@@ -38,7 +38,7 @@ KEYWORDS     = (
 
 ## Define the classifiers
 CLASSIFIERS  = (
-    'Development Status :: 3 - Aplha',
+    'Development Status :: 3 - Alpha',
     'Programming Language :: Python',
     'Programming Language :: Python :: 3.6',
 )
