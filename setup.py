@@ -37,11 +37,8 @@ KEYWORDS     = (
 )
 
 ## Define the classifiers
-CLASSIFIERS  = (
-    'Development Status :: 3 - Alpha',
-    'Programming Language :: Python',
-    'Programming Language :: Python :: 3.6',
-)
+CLASSIFIERS = ['Development Status :: 3 - Alpha'
+			]
 
 ## Important Paths
 PROJECT      = os.path.abspath(os.path.dirname(__file__))
