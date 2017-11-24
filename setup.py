@@ -1,28 +1,101 @@
 
 # coding: utf-8
 
-#val = []
-#with open('requirements.txt') as fp:
-#    for lines in fp:
-#        val.append(lines.split()) 
+"""
+Setup script for installing fastai
+"""
 
-#flatten = lambda l: [item for val in l for item in val] # to get imports 
+##########################################################################
+## Imports
+##########################################################################
 
+import os
+import re
+import codecs
 
-from distutils.core import setup
-setup(
-  name = 'fastai',
-  packages = ['fastai'], # this must be the same as the name above
-  version = '0.43',
-  author = 'Jeremy Howard, Rachel Thomas, Yannet Interian and many others',
-  author_email = 'j@fast.ai',
-  description = 'The fast.ai deep learning library, lessons, and tutorials',
-  url = 'https://github.com/fastai/fastai.git', # use the URL to the github repo
-  download_url = 'https://github.com/groverpr/fastai/archive/0.43.tar.gz', 
+from setuptools import setup
+from setuptools import find_packages
 
-# install_requires= flatten(val), 
+##########################################################################
+## Package Information
+##########################################################################
 
-  keywords = ['deeplearning', 'pytorch', 'machinelearning'], # arbitrary keywords
-  classifiers = ['Development Status :: 3 - Alpha'
-			],
+## Basic information
+NAME         = "fastai"
+DESCRIPTION  = "The fast.ai deep learning library, lessons, and tutorials"
+AUTHOR       = "Jeremy Howard, Rachel Thomas, Yannet Interian and many others"
+EMAIL        = "j@fast.ai"
+URL   = "https://github.com/fastai/fastai.git"
+#download_url = 'https://github.com/groverpr/fastai/archive/0.45.tar.gz'
+PACKAGE      = "fastai"
+REPOSITORY   = "https://github.com/groverpr/fastai"
+VERSION   = 0.45
+
+## Define the keywords
+KEYWORDS     = (
+    'deeplearning', 'machinelearning', 'pytorch'
 )
+
+## Define the classifiers
+CLASSIFIERS  = (
+    'Development Status :: 3 - Aplha',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3.6',
+)
+
+## Important Paths
+PROJECT      = os.path.abspath(os.path.dirname(__file__))
+REQUIRE_PATH = "requirements.txt"
+
+## Directories to ignore in find_packages
+EXCLUDES     = (
+    "tests", "bin", "docs", "fixtures", "register", "notebooks",
+)
+
+##########################################################################
+## Helper Function
+##########################################################################
+
+def read(*parts):
+    """
+    Assume UTF-8 encoding and return the contents of the file located at the
+    absolute path from the REPOSITORY joined with *parts.
+    """
+    with codecs.open(os.path.join(PROJECT, *parts), 'rb', 'utf-8') as f:
+        return f.read()
+
+def get_requires(path=REQUIRE_PATH):
+    """
+    Yields a generator of requirements as defined by the REQUIRE_PATH which
+    should point to a requirements.txt output by `pip freeze`.
+    """
+    for line in read(path).splitlines():
+        line = line.strip()
+        if line and not line.startswith('#'):
+            yield line
+
+##########################################################################
+## Define the configuration
+##########################################################################
+
+config = {
+    "name": NAME,
+    "version": get_version(),
+    "description": DESCRIPTION,
+    "license": LICENSE,
+    "author": AUTHOR,
+    "author_email": EMAIL,
+    "url": REPOSITORY,
+    "download_url": "{}/tarball/v{}".format(REPOSITORY, VERSION)),
+    "install_requires": list(get_requires()),
+    "classifiers": CLASSIFIERS,
+    "keywords": KEYWORDS,
+}
+
+##########################################################################
+## Run setup script
+##########################################################################
+
+if __name__ == '__main__':
+    setup(**config)
+
