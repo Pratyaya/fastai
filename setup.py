@@ -23,19 +23,19 @@ from distutils.core import setup
 ##########################################################################
 
 setup(
-    name= "fastai",
-    version= 0.45 ,
-    description= "The fast.ai deep learning library, lessons, and tutorials",
+    name = "fastai",
+    version = 0.45 ,
+    description = "The fast.ai deep learning library, lessons, and tutorials",
     
-    author= "Jeremy Howard, Rachel Thomas, Yannet Interian and many others",
+    author = "Jeremy Howard, Rachel Thomas, Yannet Interian and many others",
     
-    author_email= "j@fast.ai",
+    author_email = "j@fast.ai",
     
-    url= "https://github.com/groverpr/fastai",
+    url = "https://github.com/groverpr/fastai",
     
-    download_url=  'https://github.com/groverpr/fastai/archive/0.45.tar.gz',
+    download_url =  'https://github.com/groverpr/fastai/archive/0.45.tar.gz',
 
-    install_requires= 
+    install_requires = 
      ['bcolz>=1.1.2',
      'bleach>=2.0.0',
      'certifi>=2016.2.28',
@@ -92,9 +92,9 @@ setup(
      'webencodings>=0.5.1',
      'widgetsnbextension>=3.0.3'],
 
-    keywords= ['deeplearning', 'pytorch', 'machinelearning']
+    keywords = ['deeplearning', 'pytorch', 'machinelearning']
 
-    classifiers= ['Development Status :: 3 - Alpha'],
+    classifiers = ['Development Status :: 3 - Alpha'],
 )
 
 
