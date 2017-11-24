@@ -1,12 +1,12 @@
 
 # coding: utf-8
 
-val = []
-with open('requirements.txt') as fp:
-    for lines in fp:
-        val.append(lines.split()) 
+#val = []
+#with open('requirements.txt') as fp:
+#    for lines in fp:
+#        val.append(lines.split()) 
 
-flatten = lambda l: [item for val in l for item in val] # to get imports 
+#flatten = lambda l: [item for val in l for item in val] # to get imports 
 
 
 from distutils.core import setup
@@ -20,7 +20,7 @@ setup(
   url = 'https://github.com/fastai/fastai.git', # use the URL to the github repo
   download_url = 'https://github.com/groverpr/fastai/archive/0.42.tar.gz', 
 
-  install_requires= flatten(val), 
+# install_requires= flatten(val), 
 
   keywords = ['deeplearning', 'pytorch', 'machinelearning'], # arbitrary keywords
   classifiers = ['Development Status :: 3 - Alpha'

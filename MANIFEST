@@ -27,4 +27,3 @@ fastai/structured.py
 fastai/torch_imports.py
 fastai/transforms.py
 fastai/utils.py
-include requirements.txt
