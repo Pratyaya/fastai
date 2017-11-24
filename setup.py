@@ -109,16 +109,16 @@ PACKAGES = ['bcolz>=1.1.2',
 ##########################################################################
 
 setup(
-    name: NAME,
-    version: VERSION ,
-    description: DESCRIPTION,
-    author: AUTHOR,
-    author_email: EMAIL,
-    url: REPOSITORY,
-    download_url: "{}/tarball/v{}".format(REPOSITORY, VERSION),
-    install_requires: PACKAGES,
-    classifiers: CLASSIFIERS,
-    keywords: KEYWORDS,
+    name= NAME,
+    version= VERSION ,
+    description= DESCRIPTION,
+    author= AUTHOR,
+    author_email= EMAIL,
+    url= REPOSITORY,
+    download_url= "{}/tarball/v{}".format(REPOSITORY, VERSION),
+    install_requires= PACKAGES,
+    classifiers= CLASSIFIERS,
+    keywords= KEYWORDS,
 )
 
 
