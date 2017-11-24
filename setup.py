@@ -9,12 +9,7 @@ Setup script for installing fastai
 ## Imports
 ##########################################################################
 
-import os
-import re
-import codecs
-
-from setuptools import setup
-from setuptools import find_packages
+from distutils.core import setup
 
 ##########################################################################
 ## Package Information
@@ -110,26 +105,20 @@ PACKAGES = ['bcolz>=1.1.2',
  'widgetsnbextension>=3.0.3']
 
 ##########################################################################
-## Define the configuration
+## Setup
 ##########################################################################
 
-config = {
-    "name": NAME,
-    "version": VERSION ,
-    "description": DESCRIPTION,
-    "author": AUTHOR,
-    "author_email": EMAIL,
-    "url": REPOSITORY,
-    "download_url": "{}/tarball/v{}".format(REPOSITORY, VERSION),
-    "install_requires": PACKAGES,
-    "classifiers": CLASSIFIERS,
-    "keywords": KEYWORDS,
-}
+setup(
+    name: NAME,
+    version: VERSION ,
+    description: DESCRIPTION,
+    author: AUTHOR,
+    author_email: EMAIL,
+    url: REPOSITORY,
+    download_url: "{}/tarball/v{}".format(REPOSITORY, VERSION),
+    install_requires: PACKAGES,
+    classifiers: CLASSIFIERS,
+    keywords: KEYWORDS,
+)
 
-##########################################################################
-## Run setup script
-##########################################################################
-
-if __name__ == '__main__':
-    setup(**config)
 
