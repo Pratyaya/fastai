@@ -26,8 +26,6 @@ PACKAGE      = "fastai"
 REPOSITORY   = "https://github.com/groverpr/fastai"
 VERSION   = 0.45
 
-## Define the keywords
-KEYWORDS     = ['deeplearning', 'machinelearning', 'pytorch']
 
 ## Define the classifiers
 CLASSIFIERS = ['Development Status :: 3 - Alpha'
@@ -112,7 +110,7 @@ setup(
     download_url= "{}/tarball/v{}".format(REPOSITORY, VERSION),
     install_requires= PACKAGES,
     classifiers= CLASSIFIERS,
-    keywords= KEYWORDS,
+    keywords= ['deeplearning', 'pytorch', 'machinelearning'],
 )
 
 
