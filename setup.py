@@ -86,7 +86,7 @@ config = {
     "author": AUTHOR,
     "author_email": EMAIL,
     "url": REPOSITORY,
-    "download_url": "{}/tarball/v{}".format(REPOSITORY, VERSION)),
+    "download_url": "{}/tarball/v{}".format(REPOSITORY, VERSION),
     "install_requires": list(get_requires()),
     "classifiers": CLASSIFIERS,
     "keywords": KEYWORDS,
