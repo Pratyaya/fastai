@@ -27,9 +27,7 @@ REPOSITORY   = "https://github.com/groverpr/fastai"
 VERSION   = 0.45
 
 ## Define the keywords
-KEYWORDS     = (
-    'deeplearning', 'machinelearning', 'pytorch'
-)
+KEYWORDS     = ['deeplearning', 'machinelearning', 'pytorch']
 
 ## Define the classifiers
 CLASSIFIERS = ['Development Status :: 3 - Alpha'
@@ -38,10 +36,6 @@ CLASSIFIERS = ['Development Status :: 3 - Alpha'
 ## Important Paths
 REQUIRE_PATH = "requirements.txt"
 
-## Directories to ignore in find_packages
-EXCLUDES     = (
-    "tests", "bin", "docs", "fixtures", "register", "notebooks",
-)
 
 ##########################################################################
 ## Packages
