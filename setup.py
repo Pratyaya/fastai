@@ -80,7 +80,7 @@ def get_requires(path=REQUIRE_PATH):
 
 config = {
     "name": NAME,
-    "version": get_version(),
+    "version": VERSION ,
     "description": DESCRIPTION,
     "license": LICENSE,
     "author": AUTHOR,
