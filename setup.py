@@ -82,7 +82,6 @@ config = {
     "name": NAME,
     "version": VERSION ,
     "description": DESCRIPTION,
-    "license": LICENSE,
     "author": AUTHOR,
     "author_email": EMAIL,
     "url": REPOSITORY,
