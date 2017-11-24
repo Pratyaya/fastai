@@ -92,10 +92,8 @@ setup(
      'webencodings>=0.5.1',
      'widgetsnbextension>=3.0.3'],
 
-    keywords = ['deeplearning', 'pytorch', 'machinelearning']
+    keywords = ['deeplearning', 'pytorch', 'machinelearning'],
 
     classifiers = ['Development Status :: 3 - Alpha'],
 )
-
-
 
