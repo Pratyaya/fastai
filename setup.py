@@ -143,6 +143,5 @@ setup(
 
     keywords = ['deeplearning', 'pytorch', 'machinelearning'],
 
-    classifiers = ['Development Status :: 3 - Alpha',
-                    'Programming Language :: Python :: 3.6',],
+    classifiers = ['Development Status :: 3 - Alpha'],
 )
