@@ -97,7 +97,6 @@ setup(
     'pygments',
     'pyparsing',
     'pyqt',
-   # 'python>=3.6.0',
     'python-dateutil',
     'pytz',
     'pyzmq',
@@ -146,5 +145,5 @@ setup(
 
     classifiers = ['Development Status :: 3 - Alpha',
                       'Programming Language :: Python',
-                    'Programming Language :: Python :: 3.6'],
+                    'Programming Language :: Python :: 3.6',],
 )
