@@ -21,7 +21,7 @@ setup(
 
     packages = ['fastai'], # this must be the same as the name above
 
-    version = 0.52 ,
+    version = 0.53 ,
 
     description = "The fast.ai deep learning and machine learning library. Git pull fastai, for all fast.ai sessions and tutorials also",
     
@@ -33,12 +33,12 @@ setup(
     
     url = "https://github.com/fastai/fastai",
     
-    download_url =  'https://github.com/groverpr/fastai/archive/0.52.tar.gz',
+    download_url =  'https://github.com/groverpr/fastai/archive/0.53.tar.gz',
 
     install_requires = 
      ['awscli',
      'bcolz',     'bleach',     'certifi',     'cycler',     'decorator',
-  #   'docrepr' ,     'entrypoints',
+     'docrepr' ,     'entrypoints',
      'feather-format',
      'graphviz',     'html5lib',     'ipykernel',     'ipython',     'ipython-genutils',     'ipywidgets',     'isoweek',     'jedi',     'Jinja2',     'jsonschema',     'jupyter',     'jupyter-client',     'jupyter-console',
      'jupyter_contrib_nbextensions',     'jupyter-core',
