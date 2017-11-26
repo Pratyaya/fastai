@@ -9,7 +9,8 @@ Setup script for installing fastai
 ## Imports
 ##########################################################################
 
-from distutils.core import setup
+#from distutils.core import setup
+from setuptools import setup
 
 
 ##########################################################################
@@ -21,7 +22,7 @@ setup(
 
     packages = ['fastai'], # this must be the same as the name above
 
-    version = 0.53 ,
+    version = 0.54 ,
 
     description = "The fast.ai deep learning and machine learning library. Git pull fastai, for all fast.ai sessions and tutorials also",
     
@@ -29,11 +30,11 @@ setup(
     
     author_email = "j@fast.ai",
 
-    licence = "GNU General Public License",
+    license = "GNU General Public License",
     
     url = "https://github.com/fastai/fastai",
     
-    download_url =  'https://github.com/groverpr/fastai/archive/0.53.tar.gz',
+    download_url =  'https://github.com/groverpr/fastai/archive/0.54.tar.gz',
 
     install_requires = 
      ['awscli',
@@ -47,6 +48,8 @@ setup(
      'sklearn_pandas',     'terminado',     'testpath',
      'torchtext',     'tornado',     'tqdm',     'traitlets',     'wcwidth',     'webencodings',     'widgetsnbextension'],
 
+
+   
     keywords = ['deeplearning', 'pytorch', 'machinelearning'],
 
         classifiers = ['Development Status :: 3 - Alpha',
